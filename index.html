@@ -41,7 +41,7 @@
     <!-- Герой -->
     <section class="hero">
       <h1 class="hero-title">Эффективные решения<br /> для вашего бизнеса</h1>
-      <button type="button" class="hero-button button">Заказать услугу</button>
+      <button type="button" class="hero-button button" data-modal-open>Заказать услугу</button>
     </section>
     <!-- Преимущества -->
     <section class="advantages">
@@ -92,166 +92,187 @@
       <div class="container">
         <h2 class="wedo-title section-title">Чем мы занимаемся</h2>
         <ul class="wedo-list list">
-          <li class="wedo-item"><img src="./images/ourWork1.jpg" alt="Программирование сайта" width="370"></li>
-          <li class="wedo-item"><img src="./images/ourWork2.jpg" alt="Адаптирование сайта" width="370"></li>
-          <li class="wedo-item"><img src="./images/ourWork3.jpg" alt="Дизайн сайта" width="370"></li>
+          <li class="wedo-item">
+            <div class="image-overlay">
+              <img src="./images/ourWork1.jpg" alt="Программирование сайта" width="370">
+              <div class="img-text-overlay">
+                <p>Десктопные приложения</p>
+              </div>
+            </div>
+          </li>
+          <li class="wedo-item">
+            <div class="image-overlay">
+              <img src="./images/ourWork2.jpg" alt="Адаптирование сайта" width="370">
+              <div class="img-text-overlay">
+                <p>Мобильные приложения</p>
+              </div>
+            </div>
+          </li>
+          <li class="wedo-item">
+            <div class="image-overlay">
+              <img src="./images/ourWork3.jpg" alt="Дизайн сайта" width="370">
+              <div class="img-text-overlay">
+                <p>Дизайнерские решения</p>
+              </div>
+            </div>
+          </li>
         </ul>
-    </div>
+      </div>
     </section>
     <!-- Наша комадна -->
     <section class="team">
       <div class="container">
         <h2 class="ourt-title section-title">Наша комадна</h2>
-          <ul class="our-team list">
-           <li class="our-team-item">
-              <img src="./images/face1.jpg" alt="Игорь Демьяненко" width="270"> 
-              <div class="member-box">
-                <h3 class="title">Игорь Демьяненко</h3> 
-                <p class="member-job">Product Designer</p>
-                <ul class="svg-list list">
-                  <li class="svg-list-item">
-                    <a href="#" class="svg-link link">
-                      <svg class="svg" width="20" height="20">
-                        <use href="./images/sprite.svg#instagram"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="svg-list-item">
-                    <a href="#" class="svg-link link">
-                      <svg class="svg" width="20" height="20">
-                        <use href="./images/sprite.svg#twitter"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="svg-list-item">
-                    <a href="#" class="svg-link link">
-                      <svg class="svg" width="20" height="20">
-                        <use href="./images/sprite.svg#facebook"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="svg-list-item">
-                    <a href="#" class="svg-link link">
-                      <svg class="svg" width="20" height="20">
-                        <use href="./images/sprite.svg#linkedin"></use>
-                      </svg>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </li>
-            <li class="our-team-item">
-              <img src="./images/face2.jpg" alt="Ольга Репина" width="270">
-              <div class="member-box">
-                <h3 class="title">Ольга Репина</h3> 
-                <p class="member-job">Frontend Developer</p>
-                <ul class="svg-list list">
-                  <li class="svg-list-item">
-                    <a href="#" class="svg-link link">
-                      <svg class="svg" width="20" height="20">
-                        <use href="./images/sprite.svg#instagram"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="svg-list-item">
-                    <a href="#" class="svg-link link">
-                      <svg class="svg" width="20" height="20">
-                        <use href="./images/sprite.svg#twitter"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="svg-list-item">
-                    <a href="#" class="svg-link link">
-                      <svg class="svg" width="20" height="20">
-                        <use href="./images/sprite.svg#facebook"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="svg-list-item">
-                    <a href="#" class="svg-link link">
-                      <svg class="svg" width="20" height="20">
-                        <use href="./images/sprite.svg#linkedin"></use>
-                      </svg>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </li>
-            <li class="our-team-item">
-              <img src="./images/face3.jpg" alt="Николай Тарасов" width="270">
-              <div class="member-box">
-                <h3 class="title">Николай Тарасов</h3> 
-                <p class="member-job">Marketing</p>
-                <ul class="svg-list list">
-                  <li class="svg-list-item">
-                    <a href="#" class="svg-link link">
-                      <svg class="svg" width="20" height="20">
-                        <use href="./images/sprite.svg#instagram"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="svg-list-item">
-                    <a href="#" class="svg-link link">
-                      <svg class="svg" width="20" height="20">
-                        <use href="./images/sprite.svg#twitter"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="svg-list-item">
-                    <a href="#" class="svg-link link">
-                      <svg class="svg" width="20" height="20">
-                        <use href="./images/sprite.svg#facebook"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="svg-list-item">
-                    <a href="#" class="svg-link link">
-                      <svg class="svg" width="20" height="20">
-                        <use href="./images/sprite.svg#linkedin"></use>
-                      </svg>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </li>
-            <li class="our-team-item">
-              <img src="./images/face4.jpg" alt="Михаил Ермаков" width="270">
-              <div class="member-box">
-                <h3 class="title">Михаил Ермаков</h3> 
-                <p class="member-job">UI Designer</p>
-                <ul class="svg-list list">
-                  <li class="svg-list-item">
-                    <a href="#" class="svg-link link">
-                      <svg class="svg" width="20" height="20">
-                        <use href="./images/sprite.svg#instagram"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="svg-list-item">
-                    <a href="#" class="svg-link link">
-                      <svg class="svg" width="20" height="20">
-                        <use href="./images/sprite.svg#twitter"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="svg-list-item">
-                    <a href="#" class="svg-link link">
-                      <svg class="svg" width="20" height="20">
-                        <use href="./images/sprite.svg#facebook"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="svg-list-item">
-                    <a href="#" class="svg-link link">
-                      <svg class="svg" width="20" height="20">
-                        <use href="./images/sprite.svg#linkedin"></use>
-                      </svg>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </li>
-          </ul>
+        <ul class="our-team list">
+          <li class="our-team-item">
+            <img src="./images/face1.jpg" alt="Игорь Демьяненко" width="270"> 
+            <div class="member-box">
+              <h3 class="title">Игорь Демьяненко</h3> 
+              <p class="member-job">Product Designer</p>
+              <ul class="svg-list list">
+                <li class="svg-list-item">
+                  <a href="#" class="svg-link link">
+                    <svg class="svg" width="20" height="20">
+                      <use href="./images/sprite.svg#instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="svg-list-item">
+                  <a href="#" class="svg-link link">
+                    <svg class="svg" width="20" height="20">
+                      <use href="./images/sprite.svg#twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="svg-list-item">
+                  <a href="#" class="svg-link link">
+                    <svg class="svg" width="20" height="20">
+                      <use href="./images/sprite.svg#facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="svg-list-item">
+                  <a href="#" class="svg-link link">
+                    <svg class="svg" width="20" height="20">
+                      <use href="./images/sprite.svg#linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="our-team-item">
+            <img src="./images/face2.jpg" alt="Ольга Репина" width="270">
+            <div class="member-box">
+              <h3 class="title">Ольга Репина</h3> 
+              <p class="member-job">Frontend Developer</p>
+              <ul class="svg-list list">
+                <li class="svg-list-item">
+                  <a href="#" class="svg-link link">
+                    <svg class="svg" width="20" height="20">
+                      <use href="./images/sprite.svg#instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="svg-list-item">
+                  <a href="#" class="svg-link link">
+                    <svg class="svg" width="20" height="20">
+                      <use href="./images/sprite.svg#twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="svg-list-item">
+                  <a href="#" class="svg-link link">
+                    <svg class="svg" width="20" height="20">
+                      <use href="./images/sprite.svg#facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="svg-list-item">
+                  <a href="#" class="svg-link link">
+                    <svg class="svg" width="20" height="20">
+                      <use href="./images/sprite.svg#linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="our-team-item">
+            <img src="./images/face3.jpg" alt="Николай Тарасов" width="270">
+            <div class="member-box">
+              <h3 class="title">Николай Тарасов</h3> 
+              <p class="member-job">Marketing</p>
+              <ul class="svg-list list">
+                <li class="svg-list-item">
+                  <a href="#" class="svg-link link">
+                    <svg class="svg" width="20" height="20">
+                      <use href="./images/sprite.svg#instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="svg-list-item">
+                  <a href="#" class="svg-link link">
+                    <svg class="svg" width="20" height="20">
+                      <use href="./images/sprite.svg#twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="svg-list-item">
+                  <a href="#" class="svg-link link">
+                    <svg class="svg" width="20" height="20">
+                      <use href="./images/sprite.svg#facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="svg-list-item">
+                  <a href="#" class="svg-link link">
+                    <svg class="svg" width="20" height="20">
+                      <use href="./images/sprite.svg#linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="our-team-item">
+            <img src="./images/face4.jpg" alt="Михаил Ермаков" width="270">
+            <div class="member-box">
+              <h3 class="title">Михаил Ермаков</h3> 
+              <p class="member-job">UI Designer</p>
+              <ul class="svg-list list">
+                <li class="svg-list-item">
+                  <a href="#" class="svg-link link">
+                    <svg class="svg" width="20" height="20">
+                      <use href="./images/sprite.svg#instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="svg-list-item">
+                  <a href="#" class="svg-link link">
+                    <svg class="svg" width="20" height="20">
+                      <use href="./images/sprite.svg#twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="svg-list-item">
+                  <a href="#" class="svg-link link">
+                    <svg class="svg" width="20" height="20">
+                      <use href="./images/sprite.svg#facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="svg-list-item">
+                  <a href="#" class="svg-link link">
+                    <svg class="svg" width="20" height="20">
+                      <use href="./images/sprite.svg#linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
       </div>
     </section>
     <!-- Постоянные клиенты -->
@@ -350,9 +371,15 @@
             </a>
           </li>
         </ul>
-
+        
       </div>
     </div>
   </footer>
+  <div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+      <button data-modal-close>X</button>
+    </div>
+  </div>
+  <script src="./js/modal.js"></script>
 </body>
 </html>

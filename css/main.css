@@ -121,6 +121,20 @@ img {
   padding-top: 32px;
   padding-bottom: 32px;
 }
+.nav-link {
+  position: relative;
+}
+.nav-link.current::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: var(--accent-color);
+  border-radius: 2px;
+}
 .site-nav .link {
   color: var(--title-text-color);
 
@@ -271,6 +285,7 @@ img {
   background-color: var(--accent-color);
   color: var(--primary-background-color);
 
+  cursor: pointer;
   min-width: 200px;
   border-radius: 4px;
   border: 1px solid var(--accent-color);
@@ -283,6 +298,36 @@ img {
   letter-spacing: 0.06em;
   /* identical to box height, or 187% */
   text-align: center;
+}
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color:rgba(0, 0, 0, 0.2);
+  opacity: 1;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+.backdrop.is-hidden .modal {
+   transform: translate(-50%, -50%) scale(0.9);
+}
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+
+  height: 581px;
+  width: 528px;
+  background-color: var(--primary-background-color);
+
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 /* *************************************************** */
 /* Стилизация секции "Почему стоит выбрать нас?" */
@@ -339,6 +384,24 @@ img {
 }
 .wedo-item:not(:last-child) {
   margin-right: 30px;
+}
+.image-overlay {
+  position: relative;
+}
+.img-text-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 27px 82px;
+  color: var(--primary-background-color);
+  background-color:rgba(47, 48, 58, 0.8);
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 1.14;
+  font-weight: 400;
+
 }
 /* *************************************************** */
 /* Стилизация секции "Наша команда" */
@@ -529,3 +592,27 @@ img {
   /* identical to box height, or 200% */
   letter-spacing: 0.06em;
 } 
+/* Cards animation thingy */
+.card-thumb {
+  position: relative;
+  overflow: hidden;
+}
+.card-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(33, 150, 243, 0.9);
+  color: var(--primary-background-color);
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 63px 24px;
+}
+
+.project-item:hover .card-overlay {
+  transform: translateY(0);
+}
+.card-thumb:hover::before {
+  opacity: 1;
+}
