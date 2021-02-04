@@ -10,6 +10,7 @@
   --primary-background-color: #ffffff;
   --secondary-background-color: #2f303a;
   --svg-primary-color: #AFB1B8;
+  --cubic-transition: cubic--bezier(0.4, 0, 0.2, 1);
 }
 /* *************************************************** */
 /* Стилизация частей страницы */
@@ -142,6 +143,7 @@ img {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  transition: color 250ms var(--cubic-transition);
 }
 .site-nav .link:hover,
 .site-nav .link:focus {
@@ -165,6 +167,7 @@ img {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  transition: color 250ms var(--cubic-transition);
 }
 .contact-nav .link:hover,
 .contact-nav .link:focus {
@@ -232,6 +235,7 @@ img {
   align-items: center;
   color: var(--primary-background-color);
   background-color: rgba(255, 255, 255, 0.1);
+  transition: background-color 250ms var(--cubic-transition);
 }
 .joinus-link:hover,
 .joinus-link:focus {
@@ -465,6 +469,8 @@ img {
   justify-content: center;
   align-items: center;
   color: var(--svg-primary-color);
+  background-color: transparent;
+  transition: color 250ms var(--cubic-transition), background-color 250ms var(--cubic-transition);
 }
 .svg-link:hover,
 .svg-link:focus {
@@ -496,6 +502,7 @@ img {
   border: 1px solid var(--svg-primary-color);
   border-radius: 4px;
   color: var(--svg-primary-color);
+  transition: color 250ms var(--cubic-transition), border-color 250ms var(--cubic-transition);
 }
 .client-list-link:hover,
 .clent-list-link:focus {
@@ -536,6 +543,7 @@ img {
   letter-spacing: 0.03em;
   /* identical to box height, or 162% */
   text-align: center;
+  transition: color 250ms var(--cubic-transition), background-color 250ms var(--cubic-transition);
 } 
 .nav-buttons .button:hover,
 .nav-buttons .button:focus {
